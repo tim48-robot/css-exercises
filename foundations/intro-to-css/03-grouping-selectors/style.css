@@ -1,0 +1,13 @@
+.buttonyes, .buttonno {
+    font-size: 28px;
+    font-family: Helvetica, "Times New Roman", sans-serif
+}
+
+.buttonyes {
+    color:white;
+    background:black;
+}
+
+.buttonno{
+    background:yellow;
+}

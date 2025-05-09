@@ -1,0 +1,25 @@
+p.fontkecil {
+    background-color: rgb(255, 0, 144);
+    color : black;
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+    font-size: 15px;
+}
+
+p.fontbesar {
+    background-color: rgb(255,0, 144);
+    color : black;
+    font-family: Verdana, DejaVu Sans, sans-serif;
+    font-size: 24px;
+}
+
+div#1{
+    font-size: 36px;
+    color: blue;
+}
+
+div#two{
+    font-size: 24px;
+    font-weight: bold;
+    background-color: lightgreen;
+    color: black; 
+}
