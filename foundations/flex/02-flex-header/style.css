@@ -1,9 +1,19 @@
+:root{
+  --default-margin: 1em;
+}
+
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  align-items: center;
 }
 
 .logo {
+  margin-left: auto;
+  margin-right: auto;
   font-size: 48px;
   font-weight: 900;
   color: tomato;
@@ -13,12 +23,21 @@
 
 ul {
   /* this removes the dots on the list items*/
+  margin-top: calc(var(--default-margin) + 10px);
+  margin-bottom: calc(var(--default-margin) + 10px);
+  padding: 8px;
   list-style-type: none;
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
 }
+
+
 
 a {
   font-size: 22px;
   background: white;
+  margin: 8px;
   padding: 8px;
   /* this removes the line under the links */
   text-decoration: none;
