@@ -8,8 +8,28 @@ img {
 }
 
 .title {
+  margin-bottom: 32px;
   font-size: 36px;
+  text-align: center;
   font-weight: 900;
+}
+
+
+.plantspicture{
+  display:flex;
+  gap:52px;
+  justify-content: center;
+}
+
+.barberry, .chilli, .pepper, .saffron{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+
+.text{
+  text-align: center;
 }
 
 /* do not edit this footer */
