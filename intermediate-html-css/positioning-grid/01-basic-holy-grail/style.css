@@ -6,8 +6,9 @@ html {
 
 .container {
   display:grid;
-  grid-template: repeat(6, 120px) / repeat(6, 120px);
-  text-align: center;
+  grid-template-columns: 300px 900px;
+  grid-template-rows: 100px 100px 500px 100px;
+    text-align: center;
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
@@ -29,18 +30,18 @@ html {
 }
 
 .sidebar {
-  grid-column: 1/3;
+  grid-column: 1/2;
   grid-row: 2/-2;
   background-color: #005B94;
 }
 
 .nav {
-  grid-column: 3/-1;
+  grid-column: 2/3;
   background-color: #642cde;
 }
 
 .article {
-  grid-column: 3/-1;
+  grid-column: 2/3;
   grid-row: 3/-2;
   background-color: #7E1DC3;
 }
