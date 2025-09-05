@@ -11,8 +11,8 @@ html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: [halo] 1fr [halo2] 1fr [halo3] 5fr [halo4] 1fr;
+  grid-template-columns: 0.3fr 0.9fr;
 }
 
 .container div {
@@ -51,5 +51,6 @@ html {
 
 .footer {
   background-color: #393f4d;
+  grid-row: 4/5;
   grid-column: 1 / 3;
 }
