@@ -6,9 +6,13 @@ html {
 
 .container {
   text-align: center;
+  display:grid;
+  gap: 15px;
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 0.5fr 1fr;
 }
 
 .container div {
@@ -39,7 +43,7 @@ html {
 }
 
 .article p {
-  font-size: 18px;
+  font-size: 12px;
   font-family: sans-serif;
   color: white;
   text-align: left;
