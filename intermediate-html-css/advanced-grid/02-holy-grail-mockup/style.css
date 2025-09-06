@@ -1,9 +1,22 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
 }
 
 .container {
+  display: grid;
+  grid-template-rows:   [row1-start] 0.3fr 
+  [row1-end row2-start] 0.2fr 
+  [row2-end row3-start] 5fr 
+  [row3-end row4-start] 0.2fr 
+  [row4-end]; 
+  gap: 6px;
+  grid-template-columns: [column1-start] 0.3fr [column1-end column2-start] 1fr [column2-end];
   text-align: center;
 }
 
@@ -16,19 +29,51 @@
 }
 
 .header {
+  grid-column: column1-start/column2-end;
+  display:grid;
+  grid-template-columns: 0.75fr 1fr;
   background-color: #393f4d;
 }
+
+.header .logo{
+  text-align: start;
+}
+
+ul{
+  display:grid;
+  grid-auto-flow: column;
+}
+
+.menu{
+  display:grid;
+  grid-auto-flow: column;
+    align-content: center;
+}
+
+
+.menu ul{
+  display: contents;
+}
+
 
 .menu ul,
 .menu li {
   font-size: 16px;
+  text-align:center;
+
 }
 
 .sidebar {
+  display:grid;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-auto-flow: column;
+  align-content: space-between;
+  grid-row: 2/4;
   background-color: #C50208;
 }
 
 .sidebar .photo {
+  align-content: center;
   background-color: white;
   color: black;
   font-size: 12px;
@@ -38,6 +83,7 @@
 
 
 .sidebar .side-content {
+  align-content: center;
   background-color: white;
   color: black;
   font-size: 16px;
@@ -48,16 +94,26 @@
   background-color: #C50208;
 }
 
+.nav ul{
+  display:grid;
+  grid-auto-flow: column;
+}
+
 .nav ul li {
   font-size: 16px;
   text-transform: uppercase;
 }
 
 .article {
+  display:grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 250px;
   background-color: #bccbde;
 }
 
 .article p {
+  margin-bottom: 15px;
   font-size: 18px;
   font-family: sans-serif;
   color: white;
@@ -68,6 +124,9 @@
   background-color: #FFFFFF;
   color: black;
   text-align: center;
+}
+
+.card{
 }
 
 .card p {
@@ -82,7 +141,10 @@
 }
 
 .footer {
+  grid-column: 1/-1;
+  grid-row: row4-start/row4-end;
   background-color: #393f4d;
+  margin-bottom: 10px;
 }
 
 .footer p {
